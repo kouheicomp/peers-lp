@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="88px" height="88px" viewBox="0 0 88 88" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Pagetop</title>
+    <defs>
+        <circle id="path-1" cx="32" cy="32" r="32"></circle>
+        <filter x="-28.1%" y="-28.1%" width="156.2%" height="156.2%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="6" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.125490196   0 0 0 0 0.321568627   0 0 0 0 0.560784314  0 0 0 0.0758850524 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#67BAD8" offset="0%"></stop>
+            <stop stop-color="#BAEAEC" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-4" points="22.2578125 31.5 32.5 21.2578125 42.7421875 31.5 40.8854167 33.296875 33.7578125 26.1692708 33.7578125 41.7421875 31.2421875 41.7421875 31.2421875 26.1692708 24.0546875 33.296875"></polygon>
+    </defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="03/Footer/PC" transform="translate(-1284, 12)">
+            <g id="Pagetop" transform="translate(1296, 0)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <mask id="mask-5" fill="white">
+                    <use xlink:href="#path-4"></use>
+                </mask>
+                <use id="icon" fill="url(#linearGradient-3)" fill-rule="nonzero" xlink:href="#path-4"></use>
+                <g id="00/Icon/Arrow-Upward" mask="url(#mask-5)">
+                    <g transform="translate(22, 21)"></g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

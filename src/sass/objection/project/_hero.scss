@@ -1,0 +1,159 @@
+@import "../../../fundation/variable";
+@import "../../../fundation/mixin.scss";
+
+
+.p-hero {
+
+  display: block;
+  background-image: url(/assets/images/pc-hero.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  aspect-ratio: 1440/550;
+  @media (max-width: 768px) {
+    background-image: url(/assets/images/sp-hero.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    aspect-ratio: 390/585;
+  }
+}
+
+div.p-hero__content {
+
+  width: 59%;
+  padding-top: 7%;
+  @include sp {
+    width: 100%;
+    padding-top: 80%;
+  }
+}
+
+.p-hero__content-lead {
+  color: $bg-white;
+  font-family: Noto Sans JP;
+  font-size: clamp(14px, 1.6vw, 100px);
+  font-weight: 700;
+  line-height: 2.08em;
+  letter-spacing: -0.02em;
+  margin: 0% 0 2% 13%;
+  @include sp {
+    font-size: clamp(10px, 2.86vw, 22px);
+    margin: 0% 0 2% 6%;
+    font-weight: 500;
+  }
+}
+
+.p-hero__title-wrapper {
+  display: flex;
+  margin-left: 13%;
+  gap: 2%;
+  @include sp {
+    flex-direction: column;
+    margin-left: 6%;
+  }
+}
+
+.p-hero__title {
+  color: $bg-white;
+  font-family: Noto Sans JP;
+  font-size: clamp(32px, 3.75vw, 100px);
+  font-weight: 700;
+  line-height: 1.4em;
+  @include sp {
+    font-size: clamp(32px, 8.07vw, 62px);
+  }
+}
+
+.p-hero__title--samll {
+  font-family: Noto Sans JP;
+  font-size: clamp(20px, 2.5vw, 100px);
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: -0.01em;
+  @include sp {
+    font-size: clamp(20px, 6.5vw, 50px);
+  }
+}
+.p-hero__title-company-name-wrapper {
+  width: 22%;
+  display: flex;
+  align-items: flex-end;
+  padding-bottom: 1%;
+  @include sp {
+    width: 35%;
+    padding-bottom: 0%;
+  }
+}
+
+.p-hero__title-company-name-sub-wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: $bg-white;
+  aspect-ratio: 163/31;
+  border-radius: 25px;
+  margin-top: 70%;
+  @include sp {
+    margin-top: 3%;
+  }
+}
+
+.p-hero__title-company-name {
+  font-family: Noto Sans JP;
+  font-size: clamp(9px, 1.17vw, 16px);
+  font-weight: 700;
+  line-height: 1.44em;
+  text-align: center;
+  background: linear-gradient(89.47deg, #0094ff 0%, #2165eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  width: 100%;
+  @include sp {
+    font-size: clamp(12px, 2.64vw, 20px);
+  }
+}
+
+.p-hero__title-company-name--space {
+  padding-left: 6%;
+}
+
+.p-hero__content-list-wrapper {
+  margin-top: 4%;
+}
+
+.p-hero__content-list {
+  color: $bg-white;
+  font-family: Noto Sans JP;
+  font-size: clamp(10px, 1.25vw, 50px);
+  font-weight: 700;
+  line-height: 1.4em;
+  letter-spacing: 0.03em;
+  padding-left: 19%;
+  margin-bottom: 2%;
+  position: relative;
+  &::before {
+    content: "";
+    display: block;
+    width: clamp(12px, 1.66vw, 24px);
+    height: clamp(12px, 1.66vw, 24px);
+    background-image: url("/assets/images/circle-checkbox.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    left: 13%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  @include sp {
+    margin-top: 3%;
+    padding-left: 11%;
+    font-size: clamp(8px, 2.47vw, 19px);
+    &::before {
+      width: clamp(10px, 2.08vw, 16px);
+      height: clamp(10px, 2.08vw, 16px);
+      left: 7%;
+    }
+  }
+}
+
+

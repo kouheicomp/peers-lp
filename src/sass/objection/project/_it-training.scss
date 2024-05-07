@@ -1,0 +1,105 @@
+@import "../../../fundation/variable";
+.p-it-trainig {
+  margin-top: 5%;
+  background-image: url(/assets/images/strength-background.png);
+  object-fit: cover;
+}
+
+.p-it-training__title {
+  color: $text-white;
+  padding-top: 5%;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #6bb5d8;
+    width: 70px;
+    height: 3px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-it-training__description {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 28px;
+  max-width: 654px;
+  margin: 5% auto;
+  color: $text-white;
+}
+
+.p-it-training__scroll-infinity__wrap {
+  margin-bottom: 6%;
+}
+
+@keyframes infinity-scroll-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.p-it-training__scroll-infinity__wrap {
+  display: flex;
+  overflow: hidden;
+}
+.p-it-training__scroll-infinity__list {
+  display: flex;
+  padding: 0;
+}
+.p-it-training__scroll-infinity__list--left {
+  animation: infinity-scroll-left 80s infinite linear 0.5s both;
+}
+.p-it-training__scroll-infinity__item {
+  width: calc(100vw / 4.6);
+}
+.p-it-training__scroll-infinity__item > img {
+  width: 85%;
+  aspect-ratio: 265/165;
+}
+
+.p-it-training__content-wrapper {
+  display: flex;
+  margin: 5% auto 0% auto;
+  padding-bottom: 5%;
+  gap: 3%;
+  max-width: 1120px;
+  width: 78%;
+}
+
+.p-it-training__content {
+  aspect-ratio: 352/389;
+  background-color: $bg-white;
+  width: calc(100% / 3);
+  border-radius: 4%;
+}
+
+.p-it-training__content-img {
+  aspect-ratio: 136/124;
+  display: block;
+  width: 38%;
+  margin: 10% auto 5% auto;
+}
+
+.p-it-training__content-title {
+  font-family: Noto Sans JP;
+  font-size: clamp(16px, 1.5vw, 20px);
+  font-weight: 700;
+  line-height: 28.96px;
+  text-align: center;
+  margin-bottom: 5%;
+}
+
+.p-it-training__content-description {
+  margin: 0 11% 7% 11%;
+  font-size: clamp(12px, 1.17vw, 14px);
+  font-weight: 400;
+  line-height: 28px;
+}

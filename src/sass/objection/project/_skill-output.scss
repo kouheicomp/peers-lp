@@ -1,0 +1,57 @@
+.p-skill-output_title {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.75px;
+  text-align: center;
+  color: #212121;
+  padding-top: 6%;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #6bb5d8;
+    width: 70px;
+    height: 3px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-skill-output__content-wrapper {
+  display: flex;
+  gap: 3%;
+  margin: 7% auto;
+  width: 78%;
+}
+
+.p-skill-output__content {
+  width: calc(100% / 3);
+}
+
+.p-skill-output__content-img {
+  aspect-ratio: 352/198;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 4%;
+}
+
+.p-skill-output__content-title {
+  margin-top: 7%;
+  //sp版によって修正する
+  font-size: clamp(15px,1.5vw,20px);
+  font-weight: 700;
+  line-height: 28.96px;
+  padding-left: 3%;
+}
+
+.p-skill-output__content-description {
+  font-size: clamp(12px,1.17vw,16px);
+  font-weight: 400;
+  line-height: 28px;
+  color: #444444;
+  margin-top: 4%;
+  padding: 0 3% 0 3%;
+
+}

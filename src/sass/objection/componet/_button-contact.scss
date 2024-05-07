@@ -1,0 +1,40 @@
+@import "../../fundation/variable";
+.c-contact {
+  aspect-ratio: 356/60;
+  display: block;
+}
+.c-contact__text-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(90deg, #15a3f6 0%, #255ba2 100%);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 200px;
+  margin: auto;
+}
+
+.c-contact__text {
+  color: $text-white;
+  font-family: Noto Sans JP;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28.96px;
+  text-align: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/images/mail.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    //sp版では修正必要になる
+    width: 24px;
+    height: 24px;
+    top: 20%;
+    right: -30%;
+
+  }
+}

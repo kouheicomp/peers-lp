@@ -1,0 +1,101 @@
+@import "../../../fundation/variable";
+
+.p-training-flow {
+  // margin-top: 8%;
+  background-color: $bg-water-blue;
+}
+
+.p-training-flow__title {
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  padding-top: 5%;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #6bb5d8;
+    width: 70px;
+    height: 3px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+.p-training-flow__card-wrapper {
+  display: flex;
+  gap: 2%;
+  margin: 8% 5% 1% 5%;
+  // padding-bottom: 5%;
+}
+
+.p-training-flow__card {
+  background-color: $text-white;
+  width: calc(100% / 4);
+  padding-bottom: 2%;
+  position: relative;
+  &:not(:first-child)::before {
+    position: absolute;
+    content: "";
+    background-image: url(/assets/images/right-angle.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 16px;
+    top: 50%;
+    left: -5%;
+    // transform: translateX(-50%);
+  }
+}
+
+.p-training-flow__card-img {
+  display: block;
+  width: 23%;
+  margin: 9% auto 9% auto;
+}
+
+.p-training-flow__card-title {
+  font-family: Noto Sans JP;
+  font-size: clamp(14px, 1.36vw, 16px);
+  font-weight: 700;
+  line-height: 23.17px;
+  text-align: center;
+  margin-bottom: 7%;
+}
+
+.p-training-flow__card-description {
+  max-width: 256px;
+  font-family: Noto Sans JP;
+  font-size: clamp(12px, 1.17vw, 14px);
+  font-weight: 400;
+  line-height: 29px;
+  margin: 5%;
+}
+
+.p-training-flow__sterisk {
+  margin-left: 5%;
+  padding-bottom: 6%;
+}
+
+.p-training-flow__sterisk-text {
+  color: #444444;
+  font-family: Noto Sans JP;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 2.9em;
+  text-align: left;
+}
+
+.p-training-flow__sterisk-text--blue {
+  color: var(--Link-color, #3192c9);
+  font-family: Noto Sans JP;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 2.9em;
+}
+
+.p-training-flow__sterisk-link {
+  color: var(--Link-color, #3192c9);
+}

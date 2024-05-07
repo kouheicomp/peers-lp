@@ -1,0 +1,21 @@
+$breakpoint: 1024px;
+$breakpoint_sp: 768px;
+
+@mixin pc {
+  @media screen and (min-width: ($breakpoint)) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media screen and (max-width: ($breakpoint)) {
+    @content;
+  }
+}
+
+
+@mixin sp {
+  @media screen and (max-width: ($breakpoint_sp)) {
+    @content;
+  }
+}

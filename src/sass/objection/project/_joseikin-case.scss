@@ -1,0 +1,86 @@
+@import "../../../fundation/variable";
+
+.p-joseikin-case-title--up,
+.p-joseikin-case-title--down {
+  color: var(--TS-Deep-Blue, #062a4a);
+  font-family: Noto Sans JP;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+
+.p-joseikin-case-title--emphasize {
+  background: linear-gradient(89.47deg, #0094ff 0%, #2165eb 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Noto Sans JP;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 60px;
+  text-align: center;
+}
+
+.p-joseikin-case__sections-wrapper {
+  width: 78%;
+  margin: 5% auto;
+}
+
+.p-joseikin-case__flex-area-wrapper {
+  background-color: #fafafa;
+  margin: 0 auto;
+  padding: 2% 0 2% 0%;
+}
+
+.p-joseikin-case__flex-area,
+.p-joseikin-case__flex-area--reverse {
+  display: flex;
+  justify-content: space-between;
+  width: 78%;
+  margin: 0 auto;
+}
+
+.p-joseikin-case__flex-area-content {
+  width: 48.5%;
+}
+
+.p-joseikin-case__flex-area-title {
+  color: var(--TS-Deep-Blue, #062a4a);
+  font-family: Noto Sans JP;
+  font-size: clamp(16px, 1.66vw, 24px);
+  font-weight: 700;
+  line-height: 1.44em;
+  margin: 8% 0 6% 0;
+}
+
+.p-joseikin-case__flex-area-description {
+  color: #444444;
+  font-family: Noto Sans JP;
+  font-size: clamp(12px, 1.11vw, 16px);
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.p-joseikin-case__flex-area-description--emphasize {
+  font-family: Noto Sans JP;
+  font-size: clamp(12px, 1.11vw, 16px);
+  font-weight: 700;
+  line-height: 30px;
+}
+.p-joseikin-case__flex-area-img-wrapper {
+  width: 40%;
+}
+
+.p-joseikin-case__flex-area-img {
+  width: 100%;
+}
+
+.p-joseikin-case__flex-area-wrapper--reverse {
+  background-color: $bg-water-blue;
+  margin: 0% auto;
+  padding: 2% 0 2% 0%;
+}
+
+.p-joseikin-case__flex-area--reverse {
+  flex-direction: row-reverse;
+}

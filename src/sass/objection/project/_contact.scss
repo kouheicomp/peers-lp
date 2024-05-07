@@ -1,0 +1,187 @@
+@import "../../../fundation/variable";
+
+.p-contact__title {
+  text-align: center;
+  font-family: Noto Sans JP;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 34.75px;
+  text-align: center;
+  padding-top: 10%;
+  position: relative;
+  &::after {
+    position: absolute;
+    content: "";
+    background-color: #6bb5d8;
+    width: 70px;
+    height: 3px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.p-contact__form {
+  width: 40%;
+  margin: 10% auto;
+}
+
+.p-contact__form-company-name {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.p-contact__form-label {
+  display: flex;
+  align-items: center;
+  gap: 3%;
+  font-family: Noto Sans JP;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 29px;
+  color: var(--TS-Deep-Blue, #062a4a);
+}
+
+.p-contact__form-label-warning {
+  background: #d1453d;
+  color: $text-white;
+  padding: 1%;
+  border-radius: 15%;
+  font-family: Noto Sans JP;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 14.48px;
+}
+
+.p-contac__form-input-company-name {
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  aspect-ratio: 550/30;
+  margin-top: 2%;
+}
+.p-contact__form-name {
+  margin-bottom: 3%;
+}
+
+.p-contact__form-input-name-wrapper {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.p-contac__form-input-last-name {
+  width: 50%;
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  aspect-ratio: 265/30;
+}
+
+.p-contac__form-input-first-name {
+  width: 50%;
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  aspect-ratio: 265/30;
+}
+
+.p-contact__form-name-kana {
+  margin-bottom: 3%;
+}
+
+.p-contact__form-input-name-kana-wrapper {
+  display: flex;
+  gap: 5%;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+.p-contact__form-input-last-name-kana {
+  width: 50%;
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  aspect-ratio: 265/30;
+}
+
+.p-contact__form-input-first-name-kana {
+  width: 50%;
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  aspect-ratio: 265/30;
+}
+
+.p-contact__form-email {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.p-contact__form-input-email {
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  aspect-ratio: 550/30;
+  margin-top: 2%;
+}
+
+.p-contact__form-phone {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3%;
+}
+
+.p-contact__form-input-phone {
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  aspect-ratio: 550/30;
+  margin-top: 2%;
+}
+
+.p-contact__form-input-contact-event-wrapper {
+  margin-top: 2%;
+}
+
+.p-contact__form-input-contact-event-text {
+  font-family: Noto Sans JP;
+  font-size: clamp(13px, 1.17vw, 14px);
+  font-weight: 400;
+  line-height: 29px;
+  text-align: left;
+  padding-left: 2%;
+}
+
+.p-contact__form-input-chekbox-text {
+  font-family: Noto Sans JP;
+  font-size: clamp(13px, 1.17vw, 14px);
+  font-weight: 400;
+  line-height: 29px;
+  padding-left: 2%;
+}
+
+.p-contact__form-service-name {
+  margin-top: 3%;
+}
+
+.p-contact__form-message {
+  margin-top: 3%;
+}
+
+.p-contact__form-message-asterisk {
+  font-family: Noto Sans JP;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.p-contact__form-textarea-message {
+  width: 100%;
+  aspect-ratio: 550/174;
+  background: var(--bg-gray, #f5f5f5);
+  border: none;
+  margin: 2% 0 3% 0;
+  resize: none;
+}
+
+.p-contact__submit {
+  width: 66%;
+  margin: 7% auto;
+}
